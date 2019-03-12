@@ -6,10 +6,11 @@
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
   <script src="components/jquery-3.3.1.min.js"></script>
+  <script src="components/acao.js"></script>
 
-  <link rel="stylesheet" href="components/acao.css">
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <script>
     ons.ready(function() {
@@ -19,12 +20,70 @@
 </head>
 <body>
 
-  <h1>Calculadora de Indicie de Metabolista Basal</h1>
+  <div class="container">
+    <div class="row">
+     <div class="col-xs-12">
+      <h1>Calculadora de Indíce de Metabolista Basal</h1>
+      </div>
+     </div>
 
-  <div class="row">
-    <div class="col-xs-12">
-      <label>Digite o seu peso:</label>
-      <input type="number" name="" value="" id="peso" class="form-control" step="any">
-  </div>
+    <div class="row">
+      <div class="col-xs-12">
+       <label>Digite o seu peso</label>
+       <input type="number" name="" value="" id="peso" class="form-control" step="any">
+      </div>
+     </div>
+
+     <br>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Digite a sua altura</label>
+          <input type="number" name="" value="" id="altura" class="form-control" step="any">
+        </div>
+      </div>
+
+      <br>
+
+       <div class="row">
+        <div class="col-xs-12">
+          <label>Digite a sua idade</label>
+          <input type="number" name="" value="" id="idade" class="form-control" step="any">
+        </div>
+      </div>
+
+       <div class="row">
+        <div class="col-xs-12">
+          <br>
+          <button class="btn btn-success" id="calcular"><link>Calcular <span class="glyphicon glyphicon-ok"> </span></button>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Resultado do TMB</label>
+          <input type="number" name="" value="" id="imb" class="form-control" readonly>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Quantidade de calorias que você consumiu</label>
+          <input type="number" name="" value="" id="quantidade" class="form-control" readonly>
+        </div>
+      </div>
+
+     <div class="row">
+        <div class="col-xs-12">
+          <br>
+          <button class="btn btn-danger" id="resertar"><link>Limpar <span class="glyphicon glyphicon-repeat"> </span></button>
+        </div>
+      </div>
+
+    </div>
 </body>
 </html>
