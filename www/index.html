@@ -13,9 +13,6 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
   </script>
 </head>
 <body>
@@ -26,6 +23,24 @@
       <h1>Calculadora de Indíce de Metabolista Basal</h1>
       </div>
      </div>
+
+      <br>
+
+     <div class="row">
+       <div class="col-xs-12">
+         <label for="">Sexo</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sexo" value="M" class="radio" id="masculino">Masculino
+              </label>
+              <label>
+               <input type="radio" name="sexo" value="F" class="radio" id="feminino">Feminino
+               </label>
+          </div>
+       </div>
+     </div>
+
+     <br>
 
     <div class="row">
       <div class="col-xs-12">
@@ -72,8 +87,8 @@
 
       <div class="row">
         <div class="col-xs-12">
-          <label>Quantidade de calorias que você consumiu</label>
-          <input type="number" name="" value="" id="quantidade" class="form-control" readonly>
+          <label>Quantidade de calorias que você precisa consumir</label>
+          <input type="text" name="" value="" id="quantidade" class="form-control" readonly>
         </div>
       </div>
 
