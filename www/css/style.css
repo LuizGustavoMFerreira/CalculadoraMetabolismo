@@ -1,2 +1,51 @@
 /**/
+body{
+    background: linear-gradient(to bottom, #00ff99 0%, #ffff66 100%);
+      background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top 100%;
+  background-attachment: fixed;
 
+}
+
+fieldset
+{
+  display:block;
+  position:center;
+  top:center;
+  left:50px;
+  width: 350px;
+  height: 20px;
+}
+#calcular
+{
+  background: linear-gradient(to right, #00ff00 0%, #ffff00 100%);
+  display:block;
+  position:relative;
+  margin: 0px auto;
+  color: black;
+  width: 310px;
+  height: 40px;
+}
+#resertar
+{
+  background: linear-gradient(to right, #ff0000 0%, #ffcc66 100%);
+  display:block;
+  position:relative;
+  margin: 0px auto;
+  color: black;
+  width: 310px;
+  height: 40px;
+}
+
+input
+{
+  display:block;
+  position:relative;
+  float:right;
+  width: 190px;
+  height: 80%;
+}
+h1{
+  background-color: #00ff99;
+}
