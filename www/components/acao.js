@@ -1,33 +1,29 @@
-var quantidade;
 var resertar;
-var radio;
 
 $(document).on("click", "#calcular", function () {
 
+  var sexo = $("#sexo").val();
   var peso = $("#peso").val();
   var altura = $("#altura").val();
   var idade = $("#idade").val();
-  var masculino = $("#masculino").val();
-  var feminino = $("#feminino").val();
   var nivelAtividade = $("#nivelAtividade").val();
-  var imb = $("#imb").val();
-  $("#imb").val(imb);
+  var Resultado;
+
+  if (sexo == 'masculino') {
+    Resultado = nivelAtividade * (66 + (13, 7 * peso + (5 * altura - (6, 8 * idade))));
+  }
+  else if (sexo == 'feminino') {
+    Resultado = nivelAtividade * (655 + (13, 7 * peso + (5 * altura - (6, 8 * idade))));
+  }
+ $ ("#Resultado").val(Resultado);
+
+
 });
-  
-  if (radio == masculino)
-  {
-    imb = nivelAtividade * (66 + (13,7 * Peso +  (5 * altura - (6,8 * idade))));
-  }
-  else if (radio == feminino)
-  {
-    imb = nivelAtividade * (655 + (13,7 * Peso + ( 5 * altura - (6,8 * idade))));
-  }
-
-
- $(document).on("click", "#resertar", function () {
+$(document).on("click", "#resertar", function () {
 
   var peso = $("#peso").val("");
   var altura = $("#altura").val("");
   var idade = $("#idade").val("");
-  var imb = $("#imb").val("");
+  var Resultado = $("#Resultado").val("");
+  var sexo = $("#sexo").val("");
 });  
